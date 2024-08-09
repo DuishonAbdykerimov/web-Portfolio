@@ -1,0 +1,338 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+   
+}
+
+.container {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 99.9vh;
+    background-color: black;
+    background-image: url("./img/IMG_0339.JPG");
+    background-size: cover;
+    background-position: center;
+}
+
+.header-title {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    color: rgb(216, 193, 13);
+}
+
+.header-subtitle {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgb(230, 205, 12);
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url("https://i.pinimg.com/736x/30/58/d9/3058d97d2179d0cab8d916cc4245a598.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.title {
+    width: auto;
+    height: auto;
+    text-align: right;
+    color: rgb(219, 195, 18);
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+
+.about-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.text {
+    color: rgb(219, 195, 18);
+    margin-left: 300px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.location {
+    color: rgb(219, 195, 18);
+    margin-bottom: 20px;
+    margin-left: 320px;
+}
+
+.contact-info {
+    color: rgb(219, 195, 18);
+    margin-left: 320px;
+}
+
+.email {
+    color: rgba(215, 221, 34, 0.918);
+    transition: color 0.3s ease;
+}
+
+.email:hover {
+    color: rgb(174, 65, 40);
+}
+
+.portfolio {
+    padding-top: 80px;
+    padding-bottom: 115px;
+    text-align: center;
+   
+   
+}
+
+.portfolio-header {
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.portfolio-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    max-width: 540px;
+    background-color: #fff;
+    margin: 10px;
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+    transition: transform 0.2s ease-in;
+}
+.card:hover{
+    transform: translateY(-15px);
+}
+.card-link{
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    color: black;
+    transition: transform 0.2s ease-in;
+}
+.card-link:hover{
+    color: rgb(39,91,236);
+}
+
+.card:last-child, .card:nth-last-child(2) {
+    margin-bottom: 0%;
+}
+
+.card-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-title {
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    /* color: black; */
+}
+
+.card p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 130%;
+    /* color: black; */
+    margin-left: 10px;
+}
+
+.footer {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px; /* Отступ сверху от предыдущей секции */
+    
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    gap: 20px; /* Расстояние между элементами */
+}
+.footer-col{
+    max-width: 350px;
+    flex-grow: 1;
+}
+.footer-copyright {
+   
+    color: white;
+    line-height: 1.3;
+}
+
+.footer-copyright-name {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+    color: white;
+}
+
+.footer-icons {
+    
+    display: flex;
+    flex-direction: column; /* Располагаем иконки вертикально */
+    gap: 10px; /* Расстояние между текстом и иконками */
+   
+}
+
+.footer-icons-row {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Расстояние между иконками */
+    margin-left: center;
+}
+
+.footer-contacts {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    gap: 10px; /* Расстояние между элементами */
+    margin-left: 45px;
+}
+
+.footer-button {
+    display: inline-block;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid white;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Отступ снизу */
+
+    transition: all 0.2s ease-in;
+}
+.footer-button:hover{
+    background-color: #fff;
+    color: #1e4776;
+}
+
+.footer-contacts p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.3;
+    color: white;
+}
+/* Project*/
+
+.project {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #bebebe;
+    
+}
+
+.project-header {
+    margin: 0px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 1.3;
+    color: black;
+}
+
+.project-img {
+    margin-bottom: 70px;
+}
+
+.project-img img {
+    width: 100%;
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-description {
+    max-width: 730px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.project-description p {
+    margin: 0;
+    margin-bottom: 10px;
+    
+}
+
+.project-btn-back {
+    display: inline-block;
+    height: 60px;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid #275bec;
+    border-radius: 50px;
+    color: #275bec;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 54px;
+    text-transform: uppercase;
+    margin-top: 20px; /* Добавить отступ сверху, если необходимо */
+    text-align: center;
+    transition: all 0.2s ease-in;
+}
+.project-btn-back:hover{
+    background-color: #275bec;
+    color: #fff;
+}
